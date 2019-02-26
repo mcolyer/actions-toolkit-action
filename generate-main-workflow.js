@@ -30,12 +30,12 @@ events = [
 
 events.forEach(function(event) {
   console.log(
-  `workflow "${event}" {
+  `workflow "${event} event" {
   on = "${event}"
   resolves = "${event}"
 }
 action "${event}" {
-  uses = "mcolyer/actions-toolkit-action@1.0.0"
+  uses = "mcolyer/actions-toolkit-action@1.0.1"
 }
 
   `
