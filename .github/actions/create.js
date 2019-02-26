@@ -6,6 +6,21 @@
 //   master_branch - The name of the repository's default branch (usually `master`).
 //   description - The repository's current description.
 //
+
+function handleNewTag(tools) {
+  tools.log.info(`New tag created: ${tools.context.payload.ref}`)
+}
+
+function handleNewBranch(tools) {
+  tools.log.info(`New branch created: ${tools.context.payload.ref}`)
+}
+
 module.exports = exports = function(tools) {
-  tools.log.success(tools.context.payload.ref_type)
+  switch (tools.context.payload.ref_type) {
+    case "tag":
+      handleNewTag(tools)
+      break;
+    case "branch":
+      handleNewBranch(tools)
+  }
 }

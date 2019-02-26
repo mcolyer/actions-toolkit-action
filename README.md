@@ -1,17 +1,17 @@
 ## Actions Toolkit
 
 Actions with less docker, just write javascript for your GitHub Actions
-workflow.
+workflows.
 
 Utilizes the super helpful https://github.com/JasonEtco/actions-toolkit. See
-it's documentation for what all the `tools` object can do within an event
+its documentation for what all the `tools` object can do within an event
 handler.
 
 ### Installation
 
-1. Copy `./.github/main.workflow` into your repository and change `uses = ./` to `uses = mcolyer/actions-toolkit-action`.
-1. Copy `./.github/actions/*.js` into your repository and modify.
-1. See [./.github/actions/create.js](.github/actions/create.js) for an example
+1. Copy `.github/main.workflow` into your repository and change `uses = ./` to `uses = mcolyer/actions-toolkit-action`.
+1. Copy `.github/actions/*.js` into your repository and modify.
+1. See [.github/actions/create.js](.github/actions/create.js) for an example
 event handler.
 
 
