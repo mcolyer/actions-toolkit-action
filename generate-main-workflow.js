@@ -38,6 +38,6 @@ action "${event}" {
   uses = "mcolyer/actions-toolkit-action@1.0.1"
 }
 
-  `
+`
   )
 })
