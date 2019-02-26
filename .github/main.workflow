@@ -1,137 +1,243 @@
 workflow "check_run" {
   on = "check_run"
-  resolves = "run"
+  resolves = "check_run"
 }
+action "check_run" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
+}
+
+  
 workflow "check_suite" {
   on = "check_suite"
-  resolves = "run"
+  resolves = "check_suite"
+}
+action "check_suite" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "commit_comment" {
   on = "commit_comment"
-  resolves = "run"
+  resolves = "commit_comment"
+}
+action "commit_comment" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "create" {
   on = "create"
-  resolves = "run"
+  resolves = "create"
+}
+action "create" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "delete" {
   on = "delete"
-  resolves = "run"
+  resolves = "delete"
+}
+action "delete" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "deployment" {
   on = "deployment"
-  resolves = "run"
+  resolves = "deployment"
+}
+action "deployment" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "deployment_status" {
   on = "deployment_status"
-  resolves = "run"
+  resolves = "deployment_status"
+}
+action "deployment_status" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "fork" {
   on = "fork"
-  resolves = "run"
+  resolves = "fork"
+}
+action "fork" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "gollum" {
   on = "gollum"
-  resolves = "run"
+  resolves = "gollum"
+}
+action "gollum" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "issue_comment" {
   on = "issue_comment"
-  resolves = "run"
+  resolves = "issue_comment"
+}
+action "issue_comment" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "issues" {
   on = "issues"
-  resolves = "run"
+  resolves = "issues"
+}
+action "issues" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "label" {
   on = "label"
-  resolves = "run"
+  resolves = "label"
+}
+action "label" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "member" {
   on = "member"
-  resolves = "run"
+  resolves = "member"
+}
+action "member" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "milestone" {
   on = "milestone"
-  resolves = "run"
+  resolves = "milestone"
+}
+action "milestone" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "page_build" {
   on = "page_build"
-  resolves = "run"
+  resolves = "page_build"
+}
+action "page_build" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "project" {
   on = "project"
-  resolves = "run"
+  resolves = "project"
+}
+action "project" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "project_card" {
   on = "project_card"
-  resolves = "run"
+  resolves = "project_card"
+}
+action "project_card" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "project_column" {
   on = "project_column"
-  resolves = "run"
+  resolves = "project_column"
+}
+action "project_column" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "public" {
   on = "public"
-  resolves = "run"
+  resolves = "public"
+}
+action "public" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "pull_request" {
   on = "pull_request"
-  resolves = "run"
+  resolves = "pull_request"
+}
+action "pull_request" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "pull_request_review_comment" {
   on = "pull_request_review_comment"
-  resolves = "run"
+  resolves = "pull_request_review_comment"
+}
+action "pull_request_review_comment" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "pull_request_review" {
   on = "pull_request_review"
-  resolves = "run"
+  resolves = "pull_request_review"
+}
+action "pull_request_review" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "push" {
   on = "push"
-  resolves = "run"
+  resolves = "push"
+}
+action "push" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "repository_dispatch" {
   on = "repository_dispatch"
-  resolves = "run"
+  resolves = "repository_dispatch"
+}
+action "repository_dispatch" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "release" {
   on = "release"
-  resolves = "run"
+  resolves = "release"
+}
+action "release" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "status" {
   on = "status"
-  resolves = "run"
+  resolves = "status"
+}
+action "status" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
+  
 workflow "watch" {
   on = "watch"
-  resolves = "run"
+  resolves = "watch"
+}
+action "watch" {
+  uses = "mcolyer/actions-toolkit-action@1.0.0"
 }
 
-action "run" {
-  uses = "./"
-}
+  
