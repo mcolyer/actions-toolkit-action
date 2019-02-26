@@ -20,7 +20,7 @@ function handleNewTag(tools) {
 function handleNewBranch(tools) {
   tools.log.info(`New branch created: ${tools.context.payload.ref}`)
 
-  if (tools.context.payload.ref.contains("/")) {
+  if (tools.context.payload.ref.includes("/")) {
     tools.exit.success("Valid branch name")
   } else {
     tools.exit.failure("Invalid branch name, please add a prefix (ie <prefix>/branch)")
