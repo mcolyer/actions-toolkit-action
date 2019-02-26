@@ -9,10 +9,22 @@
 
 function handleNewTag(tools) {
   tools.log.info(`New tag created: ${tools.context.payload.ref}`)
+
+  if (tools.context.payload.ref.match(/v[0-9]+\.[0-9]+\.[0-9]+/)) {
+    tools.exit.success("Valid version")
+  } else {
+    tools.exit.failure("Invalid version, please use a version like v1.0.0.")
+  }
 }
 
 function handleNewBranch(tools) {
   tools.log.info(`New branch created: ${tools.context.payload.ref}`)
+
+  if (tools.context.payload.ref.contains("/")) {
+    tools.exit.success("Valid branch name")
+  } else {
+    tools.exit.failure("Invalid branch name, please add a prefix (ie <prefix>/branch)")
+  }
 }
 
 module.exports = exports = function(tools) {
